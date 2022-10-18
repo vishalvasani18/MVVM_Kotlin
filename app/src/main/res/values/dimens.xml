@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_10sp">10sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+    <dimen name="text_13sp">13sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_14sp">14sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+    <dimen name="text_26sp">26sp</dimen>
+    <dimen name="text_28sp">28sp</dimen>
+    <dimen name="text_30sp">30sp</dimen>
+    <dimen name="text_32sp">32sp</dimen>
+    <dimen name="text_34sp">34sp</dimen>
+    <dimen name="text_36sp">36sp</dimen>
+
+    <dimen name="phone_dimen">200dp</dimen>
+    <dimen name="phone_dimen_7">300dp</dimen>
+    <dimen name="phone_dimen_10">400dp</dimen>
+    <dimen name="row_height">30dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="cell_width">95dp</dimen>
+    <dimen name="margin">5dp</dimen>
+    <dimen name="stroke_width">3dp</dimen>
+    <dimen name="text_10dp">10dp</dimen>
+    <dimen name="text_12dp">12dp</dimen>
+    <dimen name="text_14dp">14dp</dimen>
+    <dimen name="text_16dp">16dp</dimen>
+    <dimen name="text_18dp">18dp</dimen>
+    <dimen name="text_20dp">20dp</dimen>
+    <dimen name="text_22dp">22dp</dimen>
+    <dimen name="text_24dp">24dp</dimen>
+    <dimen name="text_26dp">26dp</dimen>
+    <dimen name="text_28dp">28dp</dimen>
+    <dimen name="text_30dp">30dp</dimen>
+    <dimen name="text_32dp">32dp</dimen>
+    <dimen name="text_34dp">34dp</dimen>
+    <dimen name="text_36dp">36dp</dimen>
+    <dimen name="text_40dp">40dp</dimen>
+    <dimen name="text_50dp">50dp</dimen>
+    <dimen name="text_60dp">60dp</dimen>
+
+    <dimen name="padding_list_row">16dp</dimen>
+    <dimen name="messages_padding_left">72dp</dimen>
+    <dimen name="icon_width_height">40dp</dimen>
+    <dimen name="msg_text_primary">16sp</dimen>
+    <dimen name="msg_text_secondary">14sp</dimen>
+    <dimen name="icon_star">25dp</dimen>
+    <dimen name="icon_text">22dp</dimen>
+    <dimen name="timestamp">12dp</dimen>
+
+    <dimen name="topmenu_margin">7dp</dimen>
+    <dimen name="spacebetweendot">5dp</dimen>
+</resources>
