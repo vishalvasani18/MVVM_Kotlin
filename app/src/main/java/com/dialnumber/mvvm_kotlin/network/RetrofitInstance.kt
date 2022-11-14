@@ -10,8 +10,6 @@ object RetrofitInstance {
 
     const val MainServer = "https://reqres.in/api/"
 
- //   const val ImageMainServer = "http://api.drfriday.in/"
-
     val retrofitClient: Retrofit.Builder by lazy {
 
         val levelType: HttpLoggingInterceptor.Level

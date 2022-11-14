@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/activity_dashboard.xml" value="0.13541666666666666" />
-        <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/activity_login.xml" value="0.21" />
+        <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/activity_list_of_user.xml" value="0.1921875" />
+        <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/activity_register.xml" value="0.1921875" />
         <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/content_main.xml" value="0.1921875" />
         <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/item_list_user_list.xml" value="0.1921875" />
+        <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/item_list_view_pager.xml" value="0.1921875" />
         <entry key="..\:/Practice/MVVM_Kotlin/app/src/main/res/layout/loader_layout.xml" value="0.1921875" />
         <entry key="..\:/Skill update/MVVM_Kotlin/app/src/main/res/layout/activity_dashboard.xml" value="0.18" />
         <entry key="..\:/Skill update/MVVM_Kotlin/app/src/main/res/layout/activity_login.xml" value="0.144140625" />

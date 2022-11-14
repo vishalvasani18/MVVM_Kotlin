@@ -1,7 +1,6 @@
 package com.dialnumber.mvvm_kotlin.helpers
 
 import android.annotation.SuppressLint
-import android.app.ProgressDialog
 import android.content.Context
 import android.graphics.Color
 import com.dialnumber.mvvm_kotlin.helpers.custom_component.progress_dialog.ArcConfiguration

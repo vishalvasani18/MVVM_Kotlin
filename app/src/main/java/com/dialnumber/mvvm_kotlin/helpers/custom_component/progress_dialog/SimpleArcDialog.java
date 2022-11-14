@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.dialnumber.mvvm_kotlin.R;
 
 /**
- * Created by prathamesh on 16/01/16.
+ * Created by Vishal Vasani on 18/09/22.
  */
 public class SimpleArcDialog extends Dialog {
     // =============================================================================================

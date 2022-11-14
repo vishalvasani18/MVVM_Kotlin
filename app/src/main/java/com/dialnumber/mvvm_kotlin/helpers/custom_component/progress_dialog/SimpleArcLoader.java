@@ -23,7 +23,7 @@ import com.dialnumber.mvvm_kotlin.R;
 import java.lang.ref.WeakReference;
 
 /**
- * Created by prathamesh on 16/01/16.
+ * Created by Vishal Vasani on 18/09/22.
  */
 public class SimpleArcLoader extends View implements Animatable
 {

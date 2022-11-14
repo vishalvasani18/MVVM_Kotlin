@@ -47,6 +47,17 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"></TextView>
 
+    <ImageView
+        android:id="@+id/ivFBLogin"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/facebook_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp">
+    </ImageView>
+
     <RelativeLayout
         android:id="@+id/customProgress"
         android:layout_width="match_parent"
