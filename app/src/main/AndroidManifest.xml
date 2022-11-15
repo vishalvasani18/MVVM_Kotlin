@@ -48,6 +48,12 @@
 
         <activity
             android:name=".activities.ListOfUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activities.ViewPagerActivity"
+            android:exported="false"
             android:screenOrientation="portrait"></activity>
 
     </application>

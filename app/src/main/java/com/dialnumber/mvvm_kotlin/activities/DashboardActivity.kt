@@ -43,7 +43,6 @@ class DashboardActivity : AppCompatActivity(), View.OnClickListener {
         btnLogout = findViewById(R.id.btnLogout)
         btnLogout.setOnClickListener(this)
 
-
         dashboardViewModel = ViewModelProvider(this).get(DashboardViewModel::class.java)
 
         dashboardViewModel.getUser()!!.observe(this, Observer { userResponse ->
