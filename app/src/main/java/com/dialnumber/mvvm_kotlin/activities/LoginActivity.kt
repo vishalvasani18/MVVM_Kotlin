@@ -9,6 +9,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.app.siesta.session.SessionManager
 import com.dialnumber.mvvm_kotlin.R
 import com.dialnumber.mvvm_kotlin.helpers.NetworkUtils
 import com.dialnumber.mvvm_kotlin.model.login.LoginRequest
@@ -40,9 +41,14 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private var callbackManager: CallbackManager? = null
 
+    lateinit var session: SessionManager
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        session = SessionManager(this)
 
         etEmail = findViewById(R.id.etEmail)
         etPassword = findViewById(R.id.etPassword)
@@ -60,7 +66,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     fun loginApi() {
         loginViewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
 
-        loginrequest = LoginRequest(etEmail.text.toString().trim(), etPassword.text.toString().trim())
+        loginrequest =
+            LoginRequest(etEmail.text.toString().trim(), etPassword.text.toString().trim())
 
         customProgress.visibility = View.VISIBLE
 
@@ -68,9 +75,10 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
             customProgress.visibility = View.GONE
             if (loginResponse != null) {
-
-                val msg = loginResponse.getToken()
-                Log.d("response_set", "" + msg)
+                val response_gettoken = loginResponse.getToken()
+                Log.d("user_token", "" + response_gettoken)
+                session.setValue(SessionManager.USER_TOKEN, loginResponse.getToken())
+                session.setBooleanValue(SessionManager.IS_LOGGED_IN, true)
                 val dashboard = Intent(this, DashboardActivity::class.java)
                 startActivity(dashboard)
 
