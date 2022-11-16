@@ -1,6 +1,9 @@
 package com.dialnumber.mvvm_kotlin.activities
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -20,11 +23,21 @@ class ListOfUserActivity : AppCompatActivity() {
     lateinit var rvUserList: RecyclerView
     private var userList: MutableList<Datum> = ArrayList()
 
+    lateinit var btnViewPager: Button
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_of_user)
 
         rvUserList = findViewById(R.id.rvUserList)
+
+        btnViewPager = findViewById(R.id.btnViewPager)
+        btnViewPager.setOnClickListener(View.OnClickListener {
+
+            val viewpager_activity = Intent(this, ViewPagerActivity::class.java)
+            startActivity(viewpager_activity)
+        })
 
         listOfUserViewModel = ViewModelProvider(this).get(ListOfUserViewModel::class.java)
 
