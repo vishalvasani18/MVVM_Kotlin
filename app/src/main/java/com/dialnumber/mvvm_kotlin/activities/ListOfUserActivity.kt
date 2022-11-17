@@ -25,6 +25,8 @@ class ListOfUserActivity : AppCompatActivity() {
 
     lateinit var btnViewPager: Button
 
+    lateinit var btnViewPager2:Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +39,12 @@ class ListOfUserActivity : AppCompatActivity() {
 
             val viewpager_activity = Intent(this, ViewPagerActivity::class.java)
             startActivity(viewpager_activity)
+        })
+
+        btnViewPager2=findViewById(R.id.btnViewPager2)
+        btnViewPager2.setOnClickListener(View.OnClickListener {
+            val viewpager2_activity = Intent(this, ViewPager2Activity::class.java)
+            startActivity(viewpager2_activity)
         })
 
         listOfUserViewModel = ViewModelProvider(this).get(ListOfUserViewModel::class.java)
