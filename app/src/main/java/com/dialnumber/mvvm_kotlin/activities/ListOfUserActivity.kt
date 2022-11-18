@@ -27,6 +27,7 @@ class ListOfUserActivity : AppCompatActivity() {
 
     lateinit var btnViewPager2:Button
 
+    lateinit var btnTabwithViewpager2:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,6 +45,12 @@ class ListOfUserActivity : AppCompatActivity() {
         btnViewPager2=findViewById(R.id.btnViewPager2)
         btnViewPager2.setOnClickListener(View.OnClickListener {
             val viewpager2_activity = Intent(this, ViewPager2Activity::class.java)
+            startActivity(viewpager2_activity)
+        })
+
+        btnTabwithViewpager2=findViewById(R.id.btnTabwithViewpager2)
+        btnTabwithViewpager2.setOnClickListener(View.OnClickListener {
+            val viewpager2_activity = Intent(this, TabWithViewPager2Activity::class.java)
             startActivity(viewpager2_activity)
         })
 

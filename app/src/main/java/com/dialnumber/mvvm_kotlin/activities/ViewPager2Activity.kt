@@ -34,7 +34,6 @@ class ViewPager2Activity : AppCompatActivity() {
                 vpAllUsers.adapter = viewPager2Adapter
                 vpAllUsers.orientation = ViewPager2.ORIENTATION_VERTICAL
 
-
             } else {
                 Toast.makeText(
                     this,

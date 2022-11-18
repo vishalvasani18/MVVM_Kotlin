@@ -60,6 +60,11 @@
             android:exported="false"
             android:screenOrientation="portrait"></activity>
 
+        <activity
+            android:name=".activities.TabWithViewPager2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>
