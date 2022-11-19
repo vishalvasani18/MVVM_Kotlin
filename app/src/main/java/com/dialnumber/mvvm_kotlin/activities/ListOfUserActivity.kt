@@ -29,6 +29,8 @@ class ListOfUserActivity : AppCompatActivity() {
 
     lateinit var btnTabwithViewpager2:Button
 
+    lateinit var btnDotIndicatorwithViewpager2:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_of_user)
@@ -52,6 +54,12 @@ class ListOfUserActivity : AppCompatActivity() {
         btnTabwithViewpager2.setOnClickListener(View.OnClickListener {
             val viewpager2_activity = Intent(this, TabWithViewPager2Activity::class.java)
             startActivity(viewpager2_activity)
+        })
+
+        btnDotIndicatorwithViewpager2=findViewById(R.id.btnDotIndicatorwithViewpager2)
+        btnDotIndicatorwithViewpager2.setOnClickListener(View.OnClickListener {
+            val dot_indicator = Intent(this, ViewPager2WithDotIndicatorActivity::class.java)
+            startActivity(dot_indicator)
         })
 
         listOfUserViewModel = ViewModelProvider(this).get(ListOfUserViewModel::class.java)

@@ -31,8 +31,18 @@
         android:text="Tablayout with ViewPager2"
         app:layout_constraintTop_toBottomOf="@+id/btnViewPager2"
         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></Button>
+
+    <Button
+        android:id="@+id/btnDotIndicatorwithViewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dot Indicator with viewpager2"
+        app:layout_constraintTop_toBottomOf="@+id/btnTabwithViewpager2"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         ></Button>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvUserList"
         android:layout_width="match_parent"
@@ -40,6 +50,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTabwithViewpager2"></androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintTop_toBottomOf="@+id/btnDotIndicatorwithViewpager2"></androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

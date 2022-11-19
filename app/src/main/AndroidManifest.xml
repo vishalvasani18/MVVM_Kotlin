@@ -65,6 +65,11 @@
             android:exported="false"
             android:screenOrientation="portrait"></activity>
 
+        <activity
+            android:name=".activities.ViewPager2WithDotIndicatorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
+
     </application>
 
 </manifest>
