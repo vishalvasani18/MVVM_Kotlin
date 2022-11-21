@@ -22,7 +22,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="@drawable/tab_selector"
         app:tabGravity="center"
-        app:tabIndicatorHeight="0dp"
-        app:tabPaddingEnd="5dp"
-        app:tabPaddingStart="6dp" ></com.google.android.material.tabs.TabLayout>
+        app:tabIndicatorHeight="0dp"></com.google.android.material.tabs.TabLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
