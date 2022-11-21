@@ -70,7 +70,5 @@ class ViewPager2WithDotIndicatorActivity : AppCompatActivity() {
                 ).show()
             }
         })
-
     }
-
 }
