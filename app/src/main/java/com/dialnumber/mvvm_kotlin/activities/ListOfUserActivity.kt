@@ -25,11 +25,13 @@ class ListOfUserActivity : AppCompatActivity() {
 
     lateinit var btnViewPager: Button
 
-    lateinit var btnViewPager2:Button
+    lateinit var btnViewPager2: Button
 
-    lateinit var btnTabwithViewpager2:Button
+    lateinit var btnTabwithViewpager2: Button
 
-    lateinit var btnDotIndicatorwithViewpager2:Button
+    lateinit var btnDotIndicatorwithViewpager2: Button
+
+    lateinit var btnRecyclerviewPaging: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,22 +46,28 @@ class ListOfUserActivity : AppCompatActivity() {
             startActivity(viewpager_activity)
         })
 
-        btnViewPager2=findViewById(R.id.btnViewPager2)
+        btnViewPager2 = findViewById(R.id.btnViewPager2)
         btnViewPager2.setOnClickListener(View.OnClickListener {
             val viewpager2_activity = Intent(this, ViewPager2Activity::class.java)
             startActivity(viewpager2_activity)
         })
 
-        btnTabwithViewpager2=findViewById(R.id.btnTabwithViewpager2)
+        btnTabwithViewpager2 = findViewById(R.id.btnTabwithViewpager2)
         btnTabwithViewpager2.setOnClickListener(View.OnClickListener {
             val viewpager2_activity = Intent(this, TabWithViewPager2Activity::class.java)
             startActivity(viewpager2_activity)
         })
 
-        btnDotIndicatorwithViewpager2=findViewById(R.id.btnDotIndicatorwithViewpager2)
+        btnDotIndicatorwithViewpager2 = findViewById(R.id.btnDotIndicatorwithViewpager2)
         btnDotIndicatorwithViewpager2.setOnClickListener(View.OnClickListener {
             val dot_indicator = Intent(this, ViewPager2WithDotIndicatorActivity::class.java)
             startActivity(dot_indicator)
+        })
+
+        btnRecyclerviewPaging = findViewById(R.id.btnRecyclerviewPaging)
+        btnRecyclerviewPaging.setOnClickListener(View.OnClickListener {
+            val paging = Intent(this, RecyclerviewWithPagingActivity::class.java)
+            startActivity(paging)
         })
 
         listOfUserViewModel = ViewModelProvider(this).get(ListOfUserViewModel::class.java)
